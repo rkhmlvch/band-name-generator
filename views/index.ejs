@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs"); %>
+  <div>
+    <div>
+      <% if (locals.randomName) { %>
+        <h1 class="sign">
+          <%= randomName %>
+        </h1>
+        <% } else { %>
+
+          <h1 class="sign">Band Name Generator</h1>
+
+          <% } %>
+    </div>
+
+
+    <div>
+      <form action="/submit" method="POST">
+        <button class='glowing-btn'><span class='glowing-txt'>C<span class='faulty-letter'>L</span>ICK</span></button>
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+  <%- include("partials/footer.ejs"); %>
